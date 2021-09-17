@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
+
 namespace WishList
 {
     public class Startup
@@ -35,7 +36,11 @@ namespace WishList
 
             app.UseRouting();
 
+// Updated upstream
             app.UseEndpoints(endpoints => { endpoints.MapDefaultControllerRoute(); });
+
+            app.UseEndpoints(endpoints => {endpoints.MapDefaultControllerRoute();});
+//Stashed changes
 
             //app.Run(async (context) =>
             //{
