@@ -36,11 +36,9 @@ namespace WishList
             }
 
             app.UseRouting();
-
-// Updated upstream
             app.UseEndpoints(endpoints => { endpoints.MapDefaultControllerRoute(); });
 
-            app.UseEndpoints(endpoints => {endpoints.MapDefaultControllerRoute();});
+           // app.UseEndpoints(endpoints => {endpoints.MapDefaultControllerRoute();});
 //Stashed changes
 
             //app.Run(async (context) =>
